@@ -1,0 +1,23 @@
+"Secret" goal: add 100 numbers
+
+1.) I'm "JobTracker", volunteer is "HDFS"
+
+2.) 10 Volunteers ("TaskTracker/DataNodes"), each gets a block of data (piece of paper with 10 of 100 numbers)
+
+3.) JobTracker gets new job
+
+4.) JobTracker hands out sealed paper ("Map task") to volunteers
+
+5.) Map task for most: If asked how going, either say "ok" or "done".  Task: add your numbers together.  When done, write down answer and give it to Dan ("HDFS").  When done, Dan gives partial results to single person (for simplicity)
+
+6.) I ask 10 volunteers over and over "how's it going"?
+
+7.) 8 volunteers work, two volunteers get instructions to 
+ a.) not respond (dead/disconnected node)
+ b.) pretend to answer their phone (busy node)
+
+8.) After 3 failures in 7, give Map task to other volunteers (mention speculative execution)
+
+9.) When 10 successes, give out sealed paper to person with all partial results ("Reduce task")
+
+10.) They also sum 10 numbers, and give final answer
