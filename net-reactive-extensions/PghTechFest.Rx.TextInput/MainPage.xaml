@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="PghTechFest.Rx.TextInput.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PghTechFest.Rx.TextInput"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Orientation="Horizontal" Margin="120,0,0,0">
+            <TextBlock Text="Rx Text Input" VerticalAlignment="Center" Style="{StaticResource PageHeaderTextStyle}"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Margin="120,0,0,0">
+            <TextBox x:Name="TextInputBox"  Width="300" />
+            <ListBox x:Name="SuggestionsList" Height="300" Width="300" />
+        </StackPanel>
+    </Grid>
+</Page>
