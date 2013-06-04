@@ -1,0 +1,27 @@
+<div class="container span6">
+    <h4>Todos</h4>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th></th>
+            <th>Task</th>
+            <th>Due</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="todo in todos" ng-class="{ 'done': todo.done }">
+            <td>
+                <input type="checkbox" ng-checked="todo.done" ng-click="changeStatus(todo)"/>
+            </td>
+            <td>{{todo.title}}</td>
+            <td>{{todo.due | date: 'medium'}}</td>
+            <td>
+                <a ng-href="#/todo/{{todo.id}}"><i class="icon icon-pencil"></i></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <a class="btn" href="#/todo/">Add Todo</a>
+</div>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="repeaters-example">
+<head>
+    <script src="/javascripts/angular.js"></script>
+    <script>
+        var app = angular.module('repeaters-example', []);
+
+        app.controller('MainCtrl', function ($scope) {
+            var currentId = 1;
+
+            $scope.items = [
+                { id: currentId++, name: 'foo' },
+                { id: currentId++, name: 'bar' },
+                { id: currentId++, name: 'techfest' }
+            ];
+
+
+            $scope.addItem = function () {
+                $scope.items.push({
+                    id: currentId++,
+                    name: $scope.addName
+                });
+            };
+        });
+    </script>
+</head>
+<body>
+   <div ng-controller="MainCtrl">
+       <ul>
+           <li ng-repeat="item in items">
+               {{item}}
+           </li>
+       </ul>
+       <input type="text" ng-model="addName"/>
+       <button ng-click="addItem()">Add</button>
+   </div>
+</body>
+</html>

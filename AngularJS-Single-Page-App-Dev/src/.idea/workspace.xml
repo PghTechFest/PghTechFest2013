@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="417ea6d4-37bb-4737-b6ae-c954cd1966f9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/examples/basicController.html" afterPath="$PROJECT_DIR$/public/examples/basicController.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.html" afterPath="$PROJECT_DIR$/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/examples/todos/todos-list.html" afterPath="$PROJECT_DIR$/public/examples/todos/todos-list.html" />
+    </list>
+    <ignored path="TechFest_2013.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <file path="/todo.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369927551675" ignored="false" />
+    <file path="/app.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369426723052" ignored="false" />
+    <file path="/todoData.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369927658730" ignored="false" />
+    <file path="/index.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1370031986870" ignored="false" />
+    <file path="/dummy.xml" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369793020700" ignored="false" />
+    <file path="/package.json" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369600090297" ignored="false" />
+    <file path="/grunt.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369603817951" ignored="false" />
+    <file path="/Gruntfile.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369619433874" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/grunt/lib/grunt/cli.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369617045020" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/grunt/node_modules/findup-sync/Gruntfile.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369617045020" ignored="false" />
+    <file path="$PROJECT_DIR$/node_modules/grunt/Gruntfile.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369617045020" ignored="false" />
+    <file path="/myApp.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369795909157" ignored="false" />
+    <file path="/MainCtrl.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369843123206" ignored="false" />
+    <file path="/HomeCtrl.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369795075330" ignored="false" />
+    <file path="/home.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369793639521" ignored="false" />
+    <file path="/style.css" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369621026578" ignored="false" />
+    <file path="/prettify-init.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369621636985" ignored="false" />
+    <file path="/a.dummy" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369923901064" ignored="false" />
+    <file path="/prettyprint.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369623222645" ignored="false" />
+    <file path="/basic.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369625404740" ignored="false" />
+    <file path="/loadCode.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369850326900" ignored="false" />
+    <file path="/Dummy.txt" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369855946312" ignored="false" />
+    <file path="/basics.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369854180921" ignored="false" />
+    <file path="/BasicsCtrl.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369794968277" ignored="false" />
+    <file path="/codeExample.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369851791281" ignored="false" />
+    <file path="/codeExample.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369851809066" ignored="false" />
+    <file path="/basicController.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369850665436" ignored="false" />
+    <file path="/directive.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369853188219" ignored="false" />
+    <file path="/nestedControllers.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369851902108" ignored="false" />
+    <file path="/ControllersCtrl.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369853579703" ignored="false" />
+    <file path="/directives.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369855674208" ignored="false" />
+    <file path="/repeaters.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369854607000" ignored="false" />
+    <file path="/repeaterScope.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369855291464" ignored="false" />
+    <file path="/repeaterRefVsVal.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369855625520" ignored="false" />
+    <file path="/services.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369855943183" ignored="false" />
+    <file path="/service.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369873279153" ignored="false" />
+    <file path="/widgets.json" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369860897626" ignored="false" />
+    <file path="/filters.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369921585749" ignored="false" />
+    <file path="/builtin_filters.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369921360916" ignored="false" />
+    <file path="/routing.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1370116973456" ignored="false" />
+    <file path="/routing-foo.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369921865786" ignored="false" />
+    <file path="/routing.bar.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369921909005" ignored="false" />
+    <file path="/routing-default.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369921964163" ignored="false" />
+    <file path="/todos.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1370023117005" ignored="false" />
+    <file path="/validation.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1369924432956" ignored="false" />
+    <file path="/todos-detail.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1370022814436" ignored="false" />
+    <file path="/todos-list.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1370096239165" ignored="false" />
+    <file path="/angular-bootstrap-datetimepicker.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1370022865684" ignored="false" />
+    <file path="/todos-app.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1370030174596" ignored="false" />
+    <file path="/tests.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1370028790764" ignored="false" />
+    <file path="/test-specs.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1370029137380" ignored="false" />
+    <file path="/TodosCtrl-specs.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1370028883405" ignored="false" />
+    <file path="/TodoCtrl-specs.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1370031450490" ignored="false" />
+    <file path="/techfest.js" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1370032017792" ignored="false" />
+    <file path="/unittesting.html" changelist="417ea6d4-37bb-4737-b6ae-c954cd1966f9" time="1370032277787" ignored="false" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="TechFest_2013" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/examples/todos/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="7" selection-start="881" selection-end="883" vertical-scroll-proportion="-11.653846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todos-app.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/examples/todos/todos-app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="21" selection-start="2331" selection-end="2331" vertical-scroll-proportion="1.0966921">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todos-detail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/examples/todos/todos-detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="27" selection-start="622" selection-end="649" vertical-scroll-proportion="-9.153846">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="todos-list.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/examples/todos/todos-list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="36" selection-start="588" selection-end="588" vertical-scroll-proportion="-5.769231">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/data/todoData.js" />
+        <option value="$PROJECT_DIR$/public/bootstrap-datetimepicker/angular-bootstrap-datetimepicker.js" />
+        <option value="$PROJECT_DIR$/public/bootstrap-datetimepicker/js/angular-bootstrap-datetimepicker.js" />
+        <option value="$PROJECT_DIR$/public/examples/todos/index.html" />
+        <option value="$PROJECT_DIR$/public/examples/todos/todos-detail.html" />
+        <option value="$PROJECT_DIR$/public/examples/todos/test-specs.js" />
+        <option value="$PROJECT_DIR$/public/examples/todos/tests.html" />
+        <option value="$PROJECT_DIR$/public/examples/todos/todos-app.js" />
+        <option value="$PROJECT_DIR$/public/examples/todos/TodoCtrl-specs.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/app/techfest.js" />
+        <option value="$PROJECT_DIR$/public/templates/unittesting.html" />
+        <option value="$PROJECT_DIR$/public/examples/todos/TodosCtrl-specs.js" />
+        <option value="$PROJECT_DIR$/public/examples/todos/todos-list.html" />
+        <option value="$PROJECT_DIR$/views/index.html" />
+        <option value="$PROJECT_DIR$/public/examples/basicController.html" />
+        <option value="$PROJECT_DIR$/public/examples/routing.html" />
+      </list>
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="App JS files" pattern="file:public/javascripts/app//*.js" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents ProjectPane="true" />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="directives" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TechFest_2013" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="todos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="settings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+  </component>
+  <component name="PublishConfig">
+    <servers>
+      <server id="af8e8afe-2cff-41a4-9419-ca065fc71b4d">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </server>
+    </servers>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Slickcode\SVN\Projects\NodeJS\TechFest_2013\public\bootstrap-datetimepicker" />
+      <recent name="C:\Slickcode\SVN\Projects\NodeJS\TechFest_2013\public\examples" />
+      <recent name="C:\Slickcode\SVN\Projects\NodeJS\TechFest_2013\public" />
+      <recent name="C:\Slickcode\SVN\Projects\NodeJS\TechFest_2013\public\javascripts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Slickcode\SVN\Projects\NodeJS\TechFest_2013\public\bootstrap-datetimepicker\js" />
+      <recent name="C:\Slickcode\SVN\Projects\NodeJS\TechFest_2013\public\examples\todos" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.app.js">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="false">C:\Users\Ben\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\Slickcode\SVN\Projects\NodeJS\TechFest_2013" />
+          <option name="myCopyRoot" value="C:\Slickcode\SVN\Projects\NodeJS\TechFest_2013" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="C:\Slickcode\SVN\Projects\NodeJS\TechFest_2013" />
+          <option name="myCopyRoot" value="C:\Slickcode\SVN\Projects\NodeJS\TechFest_2013" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="417ea6d4-37bb-4737-b6ae-c954cd1966f9" name="Default" comment="" />
+      <created>1368983710625</created>
+      <updated>1368983710625</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14072971" sideWeight="0.713799" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39829606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28620103" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32800853" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="SHORT_DIFF_HORISONTALLY" value="true" />
+    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
+    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
+    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
+    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
+    <option name="LIMIT_HISTORY" value="true" />
+    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
+    <option name="UPDATE_FILTER_SCOPE_NAME" />
+    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
+    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/examples/todos/tests.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="28" selection-start="638" selection-end="638" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/examples/todos/TodoCtrl-specs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="34" selection-start="1864" selection-end="1864" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/app/techfest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="12" selection-start="1585" selection-end="1585" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/directives/codeExample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="8" selection-start="75" selection-end="140" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/examples/todos/TodosCtrl-specs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="24" selection-start="1426" selection-end="1426" vertical-scroll-proportion="1.6376147">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/templates/unittesting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="46" selection-start="444" selection-end="444" vertical-scroll-proportion="0.578125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/examples/directive.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="25" selection-start="1855" selection-end="1855" vertical-scroll-proportion="0.49046323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/examples/basicController.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="18" selection-start="1252" selection-end="1252" vertical-scroll-proportion="0.9264305">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="22" selection-start="2312" selection-end="2312" vertical-scroll-proportion="0.3705722">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/examples/service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="48" selection-start="2059" selection-end="2059" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/examples/routing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="20" selection-start="1135" selection-end="1292" vertical-scroll-proportion="-1.9615384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/examples/validation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="58" selection-start="1311" selection-end="1319" vertical-scroll-proportion="0.720339">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/examples/todos/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="7" selection-start="881" selection-end="883" vertical-scroll-proportion="-11.653846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/examples/todos/todos-list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="36" selection-start="588" selection-end="588" vertical-scroll-proportion="-5.769231">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/examples/todos/todos-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="27" selection-start="622" selection-end="649" vertical-scroll-proportion="-9.153846">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/examples/todos/todos-app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="21" selection-start="2331" selection-end="2331" vertical-scroll-proportion="1.0966921">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>App JS files</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.18656716" />
+              </list>
+            </option>
+          </splitter-proportions>
+          <order>
+            <scope name="App JS files" />
+          </order>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
+

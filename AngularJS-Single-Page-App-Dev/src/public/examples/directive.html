@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="directive-example">
+<head>
+    <script src="/javascripts/angular.js"></script>
+    <script>
+        var app = angular.module('directive-example', []);
+
+        //An example of a simple custom control.
+        app.directive('customControl', function () {
+            return {
+                restrict: 'E', //defined by an Element <custom-control>
+
+                // A template for the control. This can also be defined in a separate
+                // .html file if you use templateUrl
+                template: '<div class="customControl">' +
+                        'Clicks: {{clicks}}<br/>' +
+                        '<button ng-click="addClick()">click me</button>' +
+                        '</div>',
+
+                // The linking method. This fires when the directive is applied.
+                // you can use this much like a controller method, however directives do have a
+                // separate controller option which isn't covered here.
+                link: function (scope, elem, attrs) {
+                    scope.clicks = 0;
+                    scope.addClick = function () {
+                        scope.clicks++;
+                    };
+                }
+            }
+        });
+
+
+        //An example of a simple custom event binder.
+        app.directive('customBinder', function () {
+            return {
+                restrict: 'A', //restricted to an attribute
+
+                //The linking method. Here we're going to set up our DOM event binding.
+                link: function (scope, elem, attrs) {
+                    elem.bind('click', function () {
+                        // Take the string value that was passed to
+                        // the custom-binder attribute, and use it to find a property
+                        // on the scope and alter it.
+                        scope[attrs.customBinder] = 'Altered by customBinder!';
+
+                        // Tell Angular to apply the changes, since the change was made in a
+                        // non-Angular callback block.
+                        scope.$apply();
+                    });
+                }
+            }
+        })
+    </script>
+</head>
+<!-- here I'm just using ng-init to set up the foo property on the scope
+     this is a bit of a hack for demonstrational purposes -->
+<body ng-init="foo = 'foo'">
+
+    <!-- use our custom control directive -->
+    <custom-control></custom-control>
+    <br/>
+
+    <!-- use our custom binder directive -->
+    <button custom-binder="foo">
+        Fire customBinder.<br/><br/>
+        <!-- something to show the result of the custom binder -->
+        $scope.foo: {{foo}}
+    </button>
+</body>
+</html>

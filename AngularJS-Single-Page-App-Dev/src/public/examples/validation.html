@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="validation-example">
+<head>
+    <script src="/javascripts/angular.js"></script>
+    <script>
+        var app = angular.module('validation-example', []);
+
+        app.controller('MainCtrl', function ($scope) {
+            $scope.formData = {};
+
+            $scope.submitForm = function () {
+                $scope.lastSubmit = $scope.formData;
+            }
+        });
+    </script>
+    <style>
+        .ng-pristine {
+            background: silver;
+        }
+        .ng-dirty {
+            background: bisque;
+        }
+        .ng-invalid {
+            border: 1px solid red;
+        }
+        .ng-valid {
+            border: 1px solid green;
+        }
+    </style>
+</head>
+<body>
+<div ng-controller="MainCtrl">
+    <form name="myForm" ng-submit="lastSubmit()">
+        <p>
+            <label>Name* <input type="text" ng-model="formData.name" name="name" required/></label>
+            <span ng-show="myForm.name.$error.required">required</span>
+        </p>
+        <p>
+            <label>Email* <input type="email" ng-model="formData.email" name="email" required/></label>
+            <span ng-show="myForm.email.$error.required">required</span>
+            <span ng-show="myForm.email.$error.email">email</span>
+        </p>
+        <button type="submit" ng-disabled="myForm.$invalid">Submit</button>
+    </form>
+</div>
+</body>
+</html>

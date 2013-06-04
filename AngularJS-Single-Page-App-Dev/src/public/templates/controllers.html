@@ -1,0 +1,17 @@
+<h3>Controllers (and "views")</h3>
+
+<p>In Angular, controllers are pretty obvious, but your views are actually going to be either the HTML already
+    loaded into the DOM, or an html template defined by a templateUrl on a route or a directive.</p>
+
+<p>Controllers should house all of the "business logic" of your application, which in the case of your application
+    will likely be logic involving the UI and what is or is not do display, but could also be things like
+    calculations, and calls to external systems via injected Services (talked about a little later).</p>
+
+<code-example src="/examples/basicController.html"></code-example>
+
+<h3>Nesting Controllers and Scope Inheritance</h3>
+
+<p>Nesting can be done with controllers as well. When controllers are nested, the child controller's scope will be a
+    new $scope that prototypically inherits from the parent controller's scope.</p>
+
+<code-example src="/examples/nestedControllers.html" result-height="400px"></code-example>
