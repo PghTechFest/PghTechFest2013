@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="service-example">
+<head>
+    <script src="/javascripts/angular.js"></script>
+    <script>
+        var app = angular.module('service-example', []);
+
+        // create a simple service we can inject into other
+        // parts of our Angular application.
+        // NOTE: $http is actually a service we're injecting into our service!
+        app.factory('testService', function ($http) {
+
+            // Return an object reference from the factory method.
+            // this could be an object or a function or really anything.
+            // NOTE: services are all singletons in Angular.
+            return {
+
+                // a service method
+                getWidgets: function () {
+
+                    // $http.get().then() returns a promise. The way Angular
+                    // treats promises, when it resolves it will put the
+                    // value directly into the scope property it's placed in.
+                    return $http.get('/examples/widgets.json')
+                            .then(function (result) {
+                                return result.data;
+                            });
+                }
+            };
+        });
+
+        // inject our testService.
+        app.controller('MainCtrl', function ($scope, testService) {
+
+            //a function to load the widgets.
+            $scope.loadWidgets = function (){
+
+                // Use our injected service.
+                $scope.widgets = testService.getWidgets();
+            };
+        });
+    </script>
+</head>
+<body>
+<div ng-controller="MainCtrl">
+
+    <!-- a button to load the widgets -->
+    <button ng-click="loadWidgets()">Load Widgets</button>
+
+    <!-- just a table to display our returned data after
+        the service returns -->
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="widget in widgets">
+            <td>{{widget.id}}</td>
+            <td>{{widget.name}}</td>
+            <td>{{widget.description}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

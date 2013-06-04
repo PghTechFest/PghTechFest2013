@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <!-- Jasmine -->
+    <script src="/jasmine/jasmine.js"></script>
+    <script src="/jasmine/jasmine-html.js"></script>
+    <link rel="stylesheet" href="/jasmine/jasmine.css"/>
+
+    <!-- angular stuffs -->
+    <script src="/javascripts/angular.js"></script>
+    <script src="/javascripts/angular-resource.js"></script>
+    <script src="/javascripts/angular-mocks.js"></script>
+
+    <!-- app and tests -->
+    <script src="todos-app.js"></script>
+    <script src="TodosCtrl-specs.js"></script>
+    <script src="TodoCtrl-specs.js"></script>
+</head>
+<body>
+<script>
+    //bootstrap jasmine
+    var jasmineEnv = jasmine.getEnv();
+    jasmineEnv.addReporter(new jasmine.HtmlReporter());
+    jasmineEnv.execute();
+</script>
+</body>
+</html>

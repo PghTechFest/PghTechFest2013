@@ -1,0 +1,27 @@
+<h3>Validation</h3>
+
+<p>
+    Form validation is built into Angular as well. It leverages existing HTML5 markup, along with Angular's built in
+    directives to validate form elements, and associate validation results to the form element by placing a property on
+    the $scope at whatever the form's name is. (I realize I stumbled over the wording there, but it's very simple, see
+    the example)
+</p>
+
+<p>
+    Another thing that validation does in Angular is it will add CSS classes to elements based on their validation
+    state. It adds these elements to both the form and the inputs on the form. This allows you to apply styling to
+    specific items based on their state(s). Items can, of course, be any combination of ng-pristine/ng-dirty and
+    ng-valid/ng-invalid.
+</p>
+
+<h4>Validation CSS classes</h4>
+<ul>
+    <li>ng-pristine - for forms and inputs that are in their original, loaded state.</li>
+    <li>ng-dirty - for forms and inputs that have been altered at all.</li>
+    <li>ng-valid - for valid forms and inputs.</li>
+    <li>ng-invalid - for invalid forms and inputs.</li>
+</ul>
+
+<p>NOTE: In the example below I've made the background color representative of pristine/dirty, and the border color
+    representative of valid/invalid.</p>
+<code-example src="/examples/validation.html"></code-example>
