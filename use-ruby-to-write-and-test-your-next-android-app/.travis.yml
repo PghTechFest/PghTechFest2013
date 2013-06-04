@@ -1,0 +1,44 @@
+language: java
+before_install:
+
+    # Install base Android SDK
+    - sudo apt-get update -qq
+    - if [ `uname -m` = x86_64 ]; then sudo apt-get install -qq --force-yes libgd2-xpm ia32-libs ia32-libs-multiarch; fi
+    - wget http://dl.google.com/android/android-sdk_r21.0.1-linux.tgz
+    - tar xzf android-sdk_r21.0.1-linux.tgz
+    - export ANDROID_HOME=$PWD/android-sdk-linux
+    - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
+
+    # This is a bit of a hack to get the android-15 arm abi installed
+    - wget http://dl.google.com/android/repository/sysimg_armv7a-15_r02.zip
+    - mkdir -p ${ANDROID_HOME}/system-images/android-15
+    - unzip sysimg_armv7a-15_r02.zip -d ${ANDROID_HOME}/system-images/android-15
+
+    # Update SDK
+    - android list sdk
+    - android update sdk -u -f --filter 1,2
+    - android list sdk
+    - echo y | android update sdk -u -f --filter 1,2
+    - echo y | android update sdk -u -f --filter android-15
+
+    # Create an emulator for testing against
+    - echo no | android create avd -n Android_4.0.3 -t 1 --force
+    - echo "hw.ramSize=2048" >> ~/.android/avd/Android_4.0.3.i
+
+    # Start up emulator
+    - emulator -avd Android_4.0.3 -port 5554 -no-window -no-audio -no-boot-anim &
+    - sh ./features/support/wait_for_emulator.sh
+
+    # Install ruboto environment
+    - gem install ruboto --pre
+    - ruboto setup --yes
+
+language: ruby
+rvm:
+  - jruby-19mode
+
+before_script:
+  - bundle exec rake debug
+
+after_script:
+  - bundle exec rake

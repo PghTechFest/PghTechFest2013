@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries_max_attempts">
+        <item>Ten tries, no prob!</item>
+        <item>I\'m good, but maybe give me twenty attempts.</item>
+        <item>I think I can do it</item>
+    </string-array>
+    <string-array name="entryvalues_max_attempts">
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="entries_demo_mode">
+        <item>Off (default)</item>
+        <item>On</item> <!-- (numbers will be 4-2-1-9)</item> -->
+    </string-array>
+    <string-array name="entryvalues_demo_mode">
+        <item>off</item>
+        <item>on</item>
+    </string-array>
+</resources>
