@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest package='org.leandog.mastermind.ruboto' android:versionCode='1' android:versionName='1.0' xmlns:android='http://schemas.android.com/apk/res/android'>
+    <application android:hardwareAccelerated='true' android:icon='@android:drawable/ic_menu_view' android:label='@string/app_name' android:largeHeap='true' android:theme='@style/android:Theme.Holo.Light'>
+        <activity android:label='@string/app_name' android:name='MasterMindRubotoActivity'>
+            <intent-filter>
+                <action android:name='android.intent.action.MAIN'/>
+                <category android:name='android.intent.category.LAUNCHER'/>
+            </intent-filter>
+        </activity>
+        <activity android:exported='false' android:name='org.ruboto.RubotoActivity'/>
+        <activity android:exported='false' android:name='org.ruboto.RubotoDialog' android:theme='@android:style/Theme.Dialog'/>
+        <service android:exported='false' android:name='org.ruboto.RubotoService'/>
+        <activity android:name='MasterMindMainActivity'/>
+        <activity android:name='MasterMindAboutActivity'/>
+        <activity android:name='MasterMindPreferencesActivity'/>
+    </application>
+    <uses-sdk android:minSdkVersion='15' android:targetSdkVersion='15'/>
+    <uses-permission android:name='android.permission.INTERNET'/>
+</manifest>
