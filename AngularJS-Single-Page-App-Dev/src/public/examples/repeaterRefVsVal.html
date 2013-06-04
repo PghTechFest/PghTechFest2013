@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="repeaters-example">
+<head>
+    <script src="/javascripts/angular.js"></script>
+    <script>
+        var app = angular.module('repeaters-example', []);
+
+        app.controller('MainCtrl', function ($scope) {
+            //a list of items.
+            $scope.valItems = ['foo', 'bar', 'test'];
+
+            $scope.refItems = [
+                { name: 'foo' },
+                { name: 'bar' },
+                { name: 'test' }
+            ];
+        });
+    </script>
+</head>
+<body>
+<div ng-controller="MainCtrl">
+    <h3>Reference Types</h3>
+    <pre>$scope.refItems = {{refItems | json}};</pre>
+    <ul>
+        <li ng-repeat="item in refItems">
+            <input type="text" ng-model="item.name"/>
+        </li>
+    </ul>
+
+    <h3>Value Types</h3>
+    <pre>$scope.valItems = {{valItems | json}};</pre>
+    <ul>
+        <li ng-repeat="item in valItems">
+            <input type="text" ng-model="item"/>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

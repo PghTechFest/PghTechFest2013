@@ -1,0 +1,35 @@
+<h3>Directives</h3>
+
+<p>Directives are probably the most powerful component of Angular. They are the pieces that handle putting data
+    into, and pulling data from the DOM. Directives can be a variety of things: Custom re-usable controls, event
+    binders, validators, anything that requires access to the DOM.</p>
+
+<p>
+    Directives also can use their own isolated scope. This scope is created in much the same way a child controller
+    scope is created from a parent controller. The scope of the directive will inherit from the parent scope the
+    directive is placed in. Getting a full understanding of this is important, because it can result in unexpected
+    behavior.
+</p>
+
+<code-example src="/examples/directive.html"></code-example>
+
+<h3>Repeaters (ng-repeat)</h3>
+
+<p>
+    The directive <code>ng-repeat</code> is of note because it's one of the most commonly used
+    directives and it's one where an important gotcha related to Angular directives really come into play. Here's
+    a simple example of a repeater:</p>
+
+<code-example src="/examples/repeaters.html"></code-example>
+
+<p>
+    Since <code>ng-repeat</code> creates it's own scope, the html markup inside the ng-repeat is using the $scope
+    that belongs to the ng-repeat, not it's parent. This is a very common point of confusion for new Angular developers.
+</p>
+
+<code-example src="/examples/repeaterScope.html"></code-example>
+
+<p>With ng-repeat, you're also going to see differences in dealing with a list of reference types versus a list of value
+    types. This is because of ng-repeat having it's own scope.</p>
+
+<code-example src="/examples/repeaterRefVsVal.html" result-height="620px"></code-example>

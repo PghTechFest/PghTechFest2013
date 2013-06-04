@@ -1,0 +1,21 @@
+{
+  "name": "techfest-2013",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.2.4",
+    "jade": "*"
+  },
+  "author": {
+    "name": "Ben Lesh",
+    "email": "ben@benlesh.com",
+    "website": "http://www.benlesh.com"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}

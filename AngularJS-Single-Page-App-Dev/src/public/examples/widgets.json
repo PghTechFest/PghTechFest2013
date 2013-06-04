@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Foo",
+        "description": "This is a Foo widget."
+    },
+    {
+        "id": 2,
+        "name": "Bar",
+        "description": "The Bar widget is definitely the best."
+    },
+    {
+        "id": 1,
+        "name": "Test",
+        "description": "Test widget. Batteries sold separately."
+    }
+]

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="todos-app">
+<head>
+    <title>TechFest 2013 - Todos Example</title>
+    <!-- bootstrap stuff -->
+    <script src="/javascripts/jquery-1.10.0.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap-responsive.css"/>
+    <script src="/bootstrap/js/bootstrap.js" text="text/javascript"></script>
+
+    <!-- angular libraries -->
+    <script src="/javascripts/angular.js"></script>
+    <script src="/javascripts/angular-resource.js"></script>
+    <script src="/bootstrap-datetimepicker/js/angular-bootstrap-datetimepicker.js"></script>
+
+    <script src="/examples/todos/todos-app.js"></script>
+
+    <style>
+        .done td {
+            text-decoration: line-through;
+        }
+
+        .done {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+<div ng-view>
+</div>
+</body>
+</html>

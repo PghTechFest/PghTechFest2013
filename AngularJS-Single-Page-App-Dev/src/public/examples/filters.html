@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="builtin-filters">
+<head>
+    <script src="/javascripts/angular.js"></script>
+    <script>
+        var app = angular.module('builtin-filters', []);
+
+        // A controller so we can define some properties on our $scope to filter.
+        app.controller('TestCtrl', function ($scope) {
+            $scope.someMoney = 23489.23;
+            $scope.someNumber = -12395908235.34324;
+
+            $scope.someDate = new Date();
+
+            $scope.items = [
+                { id: 1, name: 'Foo' },
+                { id: 2, name: 'Bar' },
+                { id: 3, name: 'Test' },
+                { id: 4, name: 'Fiddle' },
+                { id: 5, name: 'Blah' }
+            ];
+
+            $scope.someText = 'Lorem Ipsum';
+        });
+
+        // A custom filter to make text more exciting!!!!
+        app.filter('excited', function (){
+            // Custom filter definitions really just
+            // return a function that takes the input as an
+            // argument and returns the altered output.
+            return function(input) {
+                return input + '!!!!';
+            };
+        });
+    </script>
+</head>
+<body>
+<div ng-controller="TestCtrl">
+
+    <h3>currency</h3>
+
+    <p>{{someMoney | currency}}</p>
+
+    <h3>number</h3>
+
+    <p>
+        default: {{someNumber | number}}<br/>
+        fractionSize of four: {{someNumber | number:4}}
+    </p>
+
+    <h3>date</h3>
+
+    <p>
+        yyyyMMdd {{someDate | date:'yyyyMMdd'}}<br/>
+        HH:mm:ss {{someDate | date:'HH:mm:ss'}} <br/>
+        EEEE {{someDate | date:'EEEE'}}
+    </p>
+
+    <h3>limitTo</h3>
+    <p>items | limitTo:2</p>
+    <ul>
+        <li ng-repeat="item in items | limitTo:2">{{item.id}} - {{item.name}}</li>
+    </ul>
+
+    <h3>orderBy</h3>
+    <p>items | orderBy:'name'</p>
+    <ul>
+        <li ng-repeat="item in items | orderBy:'name'">{{item.id}} - {{item.name}}</li>
+    </ul>
+
+    <h3>filter</h3>
+    <p>items | filter:{ name: 'F' }</p>
+    <ul>
+        <li ng-repeat="item in items |  filter:{ name: 'F' }">{{item.id}} - {{item.name}}</li>
+    </ul>
+
+    <h3>Custom filter</h3>
+    <p>
+        someText | excited: {{someText|excited}}
+    </p>
+</div>
+</body>
+</html>

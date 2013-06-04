@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="repeaters-example">
+<head>
+    <script src="/javascripts/angular.js"></script>
+    <script>
+        var app = angular.module('repeaters-example', []);
+
+        app.controller('MainCtrl', function ($scope) {
+            //a list of items.
+            $scope.items = ['foo', 'bar', 'test'];
+
+            //for sake of argument we'll have a property on the scope called item.
+            $scope.item = 'parent item';
+        });
+    </script>
+</head>
+<body>
+   <div ng-controller="MainCtrl">
+       item from parent:
+       {{item}}
+       <ul>
+           <li ng-repeat="item in items">
+               <!-- here we're inside the ng-repeat,
+               which has it's own scope, and {{item}}
+               is different -->
+               {{item}}</li>
+       </ul>
+   </div>
+</body>
+</html>

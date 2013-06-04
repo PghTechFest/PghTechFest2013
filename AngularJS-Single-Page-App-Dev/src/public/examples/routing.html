@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="routing-example">
+<head>
+    <script src="/javascripts/angular.js"></script>
+    <script>
+        var app = angular.module('routing-example', []);
+
+        app.config(function ($routeProvider) {
+            $routeProvider
+                // A basic route, you specify the controller
+                // which is defined on this module, or a referenced module,
+                // as well as a template or a templateUrl to load a template from.
+                    .when('/foo', {
+                        controller: 'FooCtrl',
+                        templateUrl: '/examples/routing-foo.html'
+                    })
+
+                // A route with a parameter.
+                // The parameter will be sent to the controller via
+                // an injectable $routeParams service.
+                    .when('/bar/:id', {
+                        controller: 'BarCtrl',
+                        templateUrl: '/examples/routing-bar.html'
+                    })
+
+                // A default route. This is the route that will be hit
+                // if all other routes fail to match.
+                    .otherwise({
+                        controller: 'DefaultCtrl',
+                        templateUrl: '/examples/routing-default.html'
+                    });
+        });
+
+        // A FooCtrl controller for the foo route above.
+        app.controller('FooCtrl', function($scope) {
+        });
+
+        app.controller('BarCtrl', function($scope, $routeParams) {
+           // Get the id from the route parameters and put it on the scope.
+           $scope.id = $routeParams.id;
+        });
+
+        // A controller for the default route.
+        app.controller('DefaultCtrl', function($scope) {
+        });
+    </script>
+</head>
+<body>
+
+<!-- some links to try our routes -->
+<div>
+    <a href="#/foo">Foo</a><br/>
+    <a href="#/bar/123">Bar: 123</a><br/>
+    <a href="#/asdf">A route that doesn't exist</a><br/>
+</div>
+
+<!-- This is the DOM element where we will be loading our routed views -->
+<div ng-view></div>
+</body>
+</html>

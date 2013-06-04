@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!-- notice the ng-app attribute here,
+    this is to bootstrap the angular application,
+    within this DOM element, to the specified application
+    module (defined below) -->
+<html ng-app="application-module">
+
+<head>
+    <script src="/javascripts/angular.js"></script>
+    <script>
+        // Create an application module. This will be the
+        // module we will "bootstrap" our application with.
+        var app = angular.module('application-module', []);
+
+        // Create a controller. We're going to implicitly inject $scope.
+        // $scope acts as our model and/or viewmodel which ferries data
+        // back and forth between our controller and our "view" (the html)
+        app.controller('TestCtrl', ['$scope', function ($scope) {
+
+            //define a property on the $scope.
+            $scope.foo = 'bar';
+
+            $scope.exciteFoo = function () {
+                $scope.foo = $scope.foo + '!';
+            };
+        }]);
+    </script>
+</head>
+<body>
+
+<!-- the ng-controller directive here defines this div and it's contents
+     as a "view" for the TestCtrl controller. -->
+<div ng-controller="TestCtrl">
+
+    <!-- the following will display {{$scope.foo}}  -->
+    Foo: {{foo}} <br/>
+
+    <!-- a button with the ng-click directive used to call
+         $scope.exciteFoo() when it's clicked -->
+    <button ng-click="exciteFoo()">Click for excitement!</button>
+</div>
+</body>
+
+</html>
