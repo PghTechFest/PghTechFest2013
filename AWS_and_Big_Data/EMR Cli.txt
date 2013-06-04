@@ -1,0 +1,46 @@
+elastic-mapreduce-cli/elastic-mapreduce"
+    . " " . "-a $ACCESS_KEY"
+    . " " . "-p $SECRET_KEY"
+    . " " . "--create"
+    . " " . "--name emr-cs-pig-$DATE"
+    . " " . "--ami-version 2.3.3"
+    . " " . ($EMR_KEEP_ALIVE ? "--alive" : "")
+    . " " . ($EMR_ENABLE_DEBUGGING ? "--enable-debugging" : "")
+    . " " . "--visible-to-all-users"
+    . " " . "--plain-output"      
+    . " " . (($EMR_AVAILABILITY_ZONE != "all-zones") ? "--availability-zone $EMR_AVAILABILITY_ZONE" : "")
+    . " " . "--instance-group master"
+        . " " . "--instance-type $EMR_MASTER_INSTANCE_TYPE"
+        . " " . "--instance-count $EMR_MASTER_NUM_INSTANCES"
+    . " " . "--instance-group core" 
+        . " " . "--instance-type $EMR_CORE_INSTANCE_TYPE"
+        . " " . "--instance-count $EMR_CORE_NUM_INSTANCES" 
+        . " " . (($EMR_CORE_BID_PRICE > 0) ? "--bid-price $EMR_CORE_BID_PRICE" : "")
+    . " " . (($EMR_TASK_NUM_INSTANCES > 0) ? 
+            "--instance-group task" 
+        . " " . "--instance-type $EMR_TASK_INSTANCE_TYPE"
+        . " " . "--instance-count $EMR_TASK_NUM_INSTANCES" 
+        . " " . (($EMR_TASK_BID_PRICE > 0) ? "--bid-price $EMR_TASK_BID_PRICE" : "") : 
+            "")
+    . " " . "--key-pair $KEY_PAIR"
+    . " " . "--log-uri s3://$BUCKET/logs/emr-cs-pig-$DATE"
+    . " " . "--bootstrap-action s3://$BUCKET/output/$DATE/scripts/installS3Cfg.sh --bootstrap-name \"Install S3Cfg\""
+    . " " . "--bootstrap-action s3://$BUCKET/output/$DATE/scripts/install_pig_0.10.1.sh --bootstrap-name \"Install Pig 0.10.1\""
+    . " " . "--bootstrap-action s3://elasticmapreduce/bootstrap-actions/run-if --args instance.isMaster=true,s3://$BUCKET/output/$DATE/scripts/install_cspig_0.10.1.sh --bootstrap-name \"Install CSPig 0.10.1 - Master Only\""
+    . " " . "--bootstrap-action s3://elasticmapreduce/bootstrap-actions/configure-hadoop --args -m,mapred.child.java.opts=$EMR_CHILD_JAVA_HEAP_MAX,-m,mapred.tasktracker.map.tasks.maximum=$EMR_CORE_MAP_TASKS_MAX,-m,mapred.tasktracker.reduce.tasks.maximum=$EMR_CORE_REDUCE_TASKS_MAX --bootstrap-name \"Custom Configuration -m mapred-site.xml - Dynamic $DATE\"" 
+    . " " . "--bootstrap-action s3://elasticmapreduce/bootstrap-actions/configure-hadoop --args -c,fs.s3n.multipart.uploads.enabled=true,-c,fs.s3n.ssl.enabled=true,-c,mapred.map.max.attempts=$EMR_MAP_MAX_ATTEMPTS,-c,mapred.reduce.max.attempts=$EMR_REDUCE_MAX_ATTEMPTS,-c,mapred.task.timeout=$EMR_TASK_TIMEOUT --bootstrap-name \"Custom Configuration -c core-site.xml - Dynamic $DATE\""
+    . " " . ($BACKUP_STATS_TO_CASSANDRA ? ""
+        . " " . "--bootstrap-action s3://$BUCKET/output/$DATE/scripts/install-cassandra.sh --bootstrap-name \"Install Cassandra - Dynamic $DATE\""
+        . " " . "--bootstrap-action s3://$BUCKET/output/$DATE/scripts/cassandra-hadoop-integration.sh --bootstrap-name \"Integrate Cassandra and Hadoop - Dynamic $DATE\""
+            : "")
+    . " " . (!$EMR_NO_STEPS ? 
+        "--jar s3://us-east-1.elasticmapreduce/libs/script-runner/script-runner.jar --args s3://$BUCKET/output/$DATE/scripts/pig-script"
+        . "," . "--pig-versions,latest"
+        . "," . "--run-pig-script,--args"
+            . "," . "-p,INPUT=s3n://$BUCKET/data"
+            . "," . "-p,MYSQL=s3n://$BUCKET/output/$SUBNET"
+            . "," . "-p,REDUCERS=$EMR_CORE_REDUCERS_MAX"
+            . "," . "-p,OUTPUT=s3n://$BUCKET/output/$DATE"
+            . "," . "-f,s3n://ci$BUCKET/output/$DATE/scripts/$CS_PIG_SCRIPT_NAME"
+            : "")
+;
