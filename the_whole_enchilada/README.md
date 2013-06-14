@@ -1,5 +1,4 @@
-# The Whole Enchilada
-## Inception to delivery in just 2 weeks
+## The Whole Enchilada <br /> Inception to delivery in just 2 weeks
 
 This is a talk about delivering an application from the top-level inception all the way to publishing to the app store, with stops to talk about the people and the code along the way.
 
@@ -14,11 +13,11 @@ We could have built a simple "hello world app" to demonstrate how we do things. 
 
 ## Stuff
 
-[Slides](https://speakerdeck.com/stevenjackson/the-whole-enchilada)
-[GitHub repository](https://github.com/leandog/OCBMobile) for the android application
+[Slides](https://speakerdeck.com/stevenjackson/the-whole-enchilada)  
+[GitHub repository](https://github.com/leandog/OCBMobile) for the android application  
 
 
 ## Feedback welcome!
 
-@stevejxsn
-@daveshah
+@stevejxsn  
+@daveshah  
